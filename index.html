@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Mail Pro - Fastest Free Disposable Email Service 2025</title>
+    
+    <meta name="description" content="Temp Mail Pro offers instant, secure, and free temp mail services. Use our temp mail to protect your privacy from spam. Get your disposable temp mail now.">
+    <meta name="keywords" content="temp mail, temp mail pro, disposable email, fake email, 10 minute mail, secure temp mail">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+        body { font-family: 'Outfit', sans-serif; background: #0f172a; color: white; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
+        .gradient-text { background: linear-gradient(90deg, #60a5fa, #34d399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header -->
+    <nav class="p-5 max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold gradient-text italic">Temp Mail Pro</h1>
+        <a href="#guide" class="text-sm text-gray-400 hover:text-white border border-gray-700 px-4 py-1 rounded-full">Guide</a>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-3">Instant <span class="gradient-text">Temp Mail</span> Solution</h2>
+            <p class="text-gray-400 text-sm md:text-base">Secure, anonymous, and faster than any other temp mail provider.</p>
+        </div>
+
+        <!-- Tool Card -->
+        <div class="glass rounded-[2rem] p-6 md:p-10 shadow-2xl">
+            <!-- Email Box -->
+            <div class="flex flex-col gap-3 mb-6">
+                <div id="email-box" class="w-full bg-slate-900/80 border border-blue-500/30 p-5 rounded-2xl text-lg md:text-2xl font-mono text-blue-400 text-center truncate select-all">
+                    Loading Temp Mail...
+                </div>
+                <div class="flex gap-2">
+                    <button onclick="copyEmail()" class="flex-1 bg-blue-600 hover:bg-blue-700 p-4 rounded-xl font-bold flex items-center justify-center transition-all active:scale-95">
+                        <i class="fas fa-copy mr-2"></i> COPY
+                    </button>
+                    <button onclick="createNewAccount()" class="bg-slate-800 hover:bg-slate-700 p-4 rounded-xl transition-all">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Inbox Section -->
+            <div class="mt-8">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-bold flex items-center"><i class="fas fa-inbox mr-2 text-blue-400"></i> INBOX</h3>
+                    <!-- Refresh Button -->
+                    <button onclick="fetchMessages()" class="bg-emerald-500/20 text-emerald-400 text-xs px-4 py-2 rounded-lg font-bold border border-emerald-500/30 hover:bg-emerald-500 hover:text-white transition-all">
+                        <i class="fas fa-redo mr-1"></i> REFRESH INBOX
+                    </button>
+                </div>
+                
+                <div id="inbox-list" class="space-y-3 min-h-[150px]">
+                    <p class="text-center text-gray-500 py-10 border-2 border-dashed border-slate-700 rounded-2xl">No messages yet. Our <span class="text-blue-400">temp mail</span> is waiting for your emails!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEO Content Section -->
+        <article id="guide" class="mt-20 text-gray-400 leading-relaxed text-sm md:text-base">
+            <h2 class="text-2xl font-bold text-white mb-4">Why Temp Mail Pro is the Ultimate Choice?</h2>
+            <p class="mb-4">Searching for a reliable <span class="text-blue-400">temp mail</span> provider? <span class="text-white">Temp Mail Pro</span> is specifically designed to be faster and more secure than traditional services like 10-minute mail. Our <span class="text-blue-400">temp mail</span> technology uses premium domains that are not blocked by major platforms.</p>
+            
+            <h3 class="text-xl font-bold text-white mt-8 mb-3">Is using Temp Mail Pro safe?</h3>
+            <p class="mb-4">Absolutely! Unlike other <span class="text-blue-400">temp mail</span> sites that store your data, <span class="text-white">Temp Mail Pro</span> follows a strict no-logs policy. Your <span class="text-blue-400">temp mail</span> messages are deleted as soon as you close the tab. This makes our <span class="text-blue-400">temp mail</span> the safest option for Instagram and Facebook verification.</p>
+
+            <h3 class="text-xl font-bold text-white mt-8 mb-3">Benefits of our Temp Mail Service</h3>
+            <ul class="list-disc ml-5 space-y-2">
+                <li><span class="text-white font-bold">Fastest Delivery:</span> Receive <span class="text-blue-400">temp mail</span> messages in real-time.</li>
+                <li><span class="text-white font-bold">Mobile Friendly:</span> Use <span class="text-blue-400">temp mail</span> on any smartphone.</li>
+                <li><span class="text-white font-bold">Premium Domains:</span> Our <span class="text-blue-400">temp mail</span> works where others fail.</li>
+            </ul>
+
+            <p class="mt-10 italic">In conclusion, if you need a <span class="text-blue-400">temp mail</span> that respects your privacy and works instantly, <span class="text-white font-bold text-blue-400 underline italic">Temp Mail Pro</span> is your go-to solution. Don't let spam ruin your day—use <span class="text-blue-400">temp mail</span> for everything!</p>
+        </article>
+    </main>
+
+    <!-- Modal for reading mail -->
+    <div id="msg-modal" class="hidden fixed inset-0 bg-black/95 flex items-center justify-center p-4 z-50">
+        <div class="glass w-full max-w-2xl rounded-3xl p-6 flex flex-col max-h-[90vh]">
+            <div class="flex justify-between items-center mb-4">
+                <h4 id="msg-subject" class="font-bold text-blue-300 truncate pr-4"></h4>
+                <button onclick="closeModal()" class="text-3xl">&times;</button>
+            </div>
+            <div id="msg-body" class="bg-white text-black p-4 rounded-xl overflow-y-auto"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'https://api.mail.gw';
+        let token = null;
+
+        async function createNewAccount() {
+            const box = document.getElementById('email-box');
+            box.innerText = "Generating...";
+            try {
+                const domainsRes = await fetch(`${API_URL}/domains`);
+                const domainsData = await domainsRes.json();
+                const domain = domainsData['hydra:member'][0].domain;
+                const username = "pro_" + Math.random().toString(36).substring(2, 10);
+                const password = Math.random().toString(36);
+                const address = `${username}@${domain}`;
+
+                await fetch(`${API_URL}/accounts`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ address, password }) });
+                const tokenRes = await fetch(`${API_URL}/token`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ address, password }) });
+                const tokenData = await tokenRes.json();
+                token = tokenData.token;
+                box.innerText = address;
+                fetchMessages();
+            } catch (err) { box.innerText = "Error. Click Refresh."; }
+        }
+
+        async function fetchMessages() {
+            if (!token) return;
+            const list = document.getElementById('inbox-list');
+            try {
+                const res = await fetch(`${API_URL}/messages`, { headers: { 'Authorization': `Bearer ${token}` } });
+                const data = await res.json();
+                const messages = data['hydra:member'];
+                if (messages.length === 0) return;
+                list.innerHTML = "";
+                messages.forEach(msg => {
+                    const item = document.createElement('div');
+                    item.className = "bg-slate-800/50 p-4 rounded-xl cursor-pointer hover:border-blue-500 border border-transparent transition-all";
+                    item.innerHTML = `<div class="flex justify-between text-xs text-gray-400 mb-1"><span>From: ${msg.from.address}</span></div><div class="font-bold truncate">${msg.subject}</div>`;
+                    item.onclick = () => readMail(msg.id);
+                    list.appendChild(item);
+                });
+            } catch (err) { console.log("Refresh error"); }
+        }
+
+        async function readMail(id) {
+            const res = await fetch(`${API_URL}/messages/${id}`, { headers: { 'Authorization': `Bearer ${token}` } });
+            const data = await res.json();
+            document.getElementById('msg-subject').innerText = data.subject;
+            document.getElementById('msg-body').innerHTML = data.html || `<pre>${data.text}</pre>`;
+            document.getElementById('msg-modal').classList.remove('hidden');
+        }
+
+        function closeModal() { document.getElementById('msg-modal').classList.add('hidden'); }
+        function copyEmail() { const email = document.getElementById('email-box').innerText; navigator.clipboard.writeText(email); alert("Email Copied!"); }
+        window.onload = createNewAccount;
+        setInterval(fetchMessages, 10000); // Auto refresh every 10s
+    </script>
+</body>
+</html>
